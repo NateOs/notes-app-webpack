@@ -1,6 +1,6 @@
 const filters = {
     searchText: '',
-    sortBy: 'byEdited'
+    sortBy: ''
 }
 
 const getFilters = () => filters

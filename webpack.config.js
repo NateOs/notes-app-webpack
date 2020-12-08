@@ -9,6 +9,7 @@ module.exports = {
         path: path.resolve(__dirname, 'public/scripts'),
         filename: '[name]-bundle.js'
     },
+    watch: true,
     module: {
         rules: [{
             test: /\.js$/,
