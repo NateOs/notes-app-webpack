@@ -52,9 +52,9 @@ const removeNote = (id) => {
 const sortNotes = (sortBy) => {
     if (sortBy === 'byEdited') {
         return notes.sort((a, b) => {
-            if (a.updatedAt > b.updatedAt) {
+            if (a.updatedAt < b.updatedAt) {
                 return -1
-            } else if (a.updatedAt < b.updatedAt) {
+            } else if (a.updatedAt > b.updatedAt) {
                 return 1
             } else {
                 return 0

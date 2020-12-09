@@ -27,8 +27,7 @@ bodyEle.addEventListener('input', (e) => {
 
 //removing note from edit page
 document.querySelector('#remove-note').addEventListener('click', () => {
-    removeNote(note.id)
-    saveNotes(notes)
+    removeNote(noteId)
     location.assign('/index.html')//redirection
 })
 
