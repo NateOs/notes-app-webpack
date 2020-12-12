@@ -6,18 +6,7 @@ import { sortNotes, getNotes } from './notes'
 const generateNoteDom = (note) => {
     const noteEl = document.createElement('a')
     const textEl = document.createElement('p')
-    // const button = document.createElement('button')
     const statusEl = document.createElement('p')
-
-    // //setup the remove notes button
-    // button.textContent = 'x'
-    // noteEl.appendChild(button)
-    
-    // button.addEventListener('click', () => {        
-    //     removeNote(note.id)
-    //     saveNotes(notes)
-    //     renderNotes(notes, filters)
-    // })
 
     //setup the note title text
     if (note.title.length > 0) {
